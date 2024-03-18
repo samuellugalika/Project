@@ -1,0 +1,699 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    background-color: #fff;
+    opacity: 0.96;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+nav ul li a:hover{
+    color:rgb(0, 145, 255);
+}
+.buttons .log{
+    border: none;
+    background-color: transparent;
+    margin-right: 5vh;
+    font-weight: 600;cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.buttons .log:hover{
+    color: rgb(0, 145, 255);
+}
+.buttons .sign{
+    border: none;
+    background-color: rgb(0, 145, 255);
+    color: white  ;
+    height: 5vh;
+    width: 16vh;
+    border-radius: 5px;
+    font-weight: bold;cursor: pointer;
+}
+.buttons .sign:hover{
+    background-color: rgba(56, 108, 229, 0.97);
+}
+/* ---------------------------------------------------------------- */
+header{
+    background-image:linear-gradient(rgba(56, 108, 229, 0.97), rgba(184, 184, 184, 0.97));
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    border-radius: 5px;
+    margin: 2em;
+    padding: 2em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1{
+    width: 50%;
+    font-size: 2.5em;
+}
+header p{
+    margin-top: 1em;
+    width: 50%;
+    font-size: 0.9em;
+    line-height: auto;
+    margin-bottom: 1em;
+}
+header input{
+    height: 6vh;
+    border: none;
+}
+.src{
+    width: 25%;
+    padding: 10px;
+    outline: none;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+}
+.b-src{
+    background-color: rgb(0, 145, 255); 
+    color: white;
+    width: 10%;
+    /* font-weight: 600; */
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+#numbers{
+    margin: 2em 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#numbers .bloc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#numbers .bloc .box{
+    display: flex;
+    align-items: center;
+}
+#numbers .bloc .box img{
+    object-fit: cover;
+    object-position: center;
+    margin-right: 2vh;
+    width: 70px;
+    height: 70px;
+}
+#numbers .bloc .box .text h1{
+    font-size: 2em !important;
+}
+#numbers .bloc .box .text p{
+    font-size: 1em;
+}
+/* ---------------------------------------------------------------- */
+#first {
+    margin: 3em 2em;
+    
+}
+#first .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#first .head .left .line{
+    height: 4px;
+    width: 10vh;
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    margin-top: 0.7em;
+}
+#first .head .right button{
+    border: 1px solid rgb(0, 145, 255);
+    background-color: transparent;
+    color: rgb(0, 145, 255)  ;
+    height: 7vh;
+    width: 23vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#first .head .right button:hover{
+    background-color: rgb(0, 145, 255);
+    color : white;
+}
+.courses{
+    margin-top: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.courses .course-box-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+.courses .course-box-top .course-box{
+    box-shadow:1px 1px 3px rgba(104, 103, 103, 0.9);
+    border-radius: 10px;
+}
+.courses .course-box-top .course-box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.courses .course-box-top .course-box .price{
+    background-color: rgb(0, 145, 255);
+    color: #fff;
+    height: auto;
+    text-align: center;
+    width: 12%;
+    float: right;
+    margin-top: -0.3em;
+}
+.courses .course-box-top .course-box h2{
+    font-size: 1.3em;
+    padding: 10px;
+}
+.courses .course-box-top .course-box .stars{
+    margin-left: 10px;
+    align-items: center;
+}
+.courses .course-box-top .course-box .stars img{
+    width: 20px;
+    height: 20px;
+}
+.courses .course-box-top .course-box .line{
+    width: 90%;
+    align-items: center;
+    margin-left:15px ;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 1px;
+    background-color: rgb(181, 181, 181);
+}
+.courses .course-box-top .course-box .course-box-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+}
+.courses .course-box-top .course-box .course-box-foot .des{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.courses .course-box-top .course-box .course-box-foot .des img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1vh;
+}
+/* ---------------------------------------------------------------- */
+#second{
+    height: 80vh;
+    background-color: rgba(194, 224, 247, 0.8);
+    padding: 5em 4em;
+    display: flex;
+    gap: 1rem;
+}
+#second .left{
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#second .left h1{
+    font-size: 3em;
+}
+#second .left .line{
+    height: 4px;
+    width: 25vh;
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    margin-top: 0.7em;
+}
+#second .left p{
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    text-align:justify;
+}
+#second .left button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 145, 255);
+    color: white  ;
+    height: 7vh;
+    width: 20vh;
+    border-radius: 5px;
+    margin-top: 1.5em;
+}
+#second .left button:hover{
+    border: 1px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    background: transparent;
+}
+#second .right{
+    width: 50%;
+}
+#second .right video{
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------------------------------------------- */
+#third {
+    height: 80vh;
+    padding: 2em;
+    display: flex;
+}
+#third .left{
+    width: 40%;
+}
+#third .left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+#third .right {
+    width: 60%;
+    margin-left: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#third .right h1{
+    font-size: 3em;
+}
+#third .right  .line{
+    height: 4px;
+    width: 24vh;
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    margin-top: 0.7em;
+}
+#third .right  .stu{
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+}
+#third .right  .stu img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-right: 4vh;
+}
+#third .right p{
+    text-align: justify;
+    width: 97%;
+    margin-top: 1.5em;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+#third .right .star {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+}
+#third .right .star img{
+    width: 20px;
+    height: 20px;
+}
+.star-arrow{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items:flex-end;
+}
+.star-arrow .a-l{
+    width: 25%;
+    height: 5vh;
+    color: rgb(0, 145, 255);
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.star-arrow .a-r{
+    width: 25%;
+    height: 5vh;
+    background-color: rgba(194, 224, 247, 0.8);
+    border: none;
+    color: rgb(0, 145, 255);
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------- */
+#fourth{
+    height: auto;
+    padding: 2em 3em;
+    background-color: rgba(194, 224, 247, 0.8);
+}
+#fourth .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#fourth .head .left{
+    width: 50%;
+}
+#fourth .head .left .line{
+    height: 4px;
+    width: 10vh;
+    background-color: rgb(0, 145, 255);
+    border-radius: 10px;
+    margin-top: 0.7em;
+}
+#fourth .head .right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items:flex-end;
+}
+#fourth .head .right .a-l{
+    width: 25%;
+    height: 5vh;
+    color: rgb(0, 145, 255);
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+#fourth .head .right .a-r{
+    width: 15%;
+    height: 5vh;
+    background-color: rgba(56, 108, 229, 0.97);
+    border: none;
+    color: rgb(0, 145, 255);
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#fourth .blog{
+    width: 31%;
+    margin-top: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    box-shadow:1px 1px 3px rgba(104, 103, 103, 0.9);
+}
+#fourth .bloc-blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#fourth .blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#fourth .blog p{
+    padding: 5px 20px;
+    color :rgba(133, 133, 133, 0.97);
+}
+#fourth .blog h2{
+    padding: 5px 10px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+#fourth .blog a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 145, 255);
+    padding: 5px 20px;
+    font-weight: 600;
+}
+/* ---------------------------------------------------------------- */
+#fifth {
+    height: 35vh;
+    margin: 2em 3em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#fifth h1 {
+    font-size: 2.5em;
+}
+#fifth p{
+    padding: 1em;
+}
+#fifth .src{
+    outline: none;
+    border: none;
+    background-color: #fff;
+    box-shadow: 1px 3px 5px rgba(133, 133, 133, 0.97);
+}
+#fifth .b-src{
+    outline: none;
+    border: none;
+    height: 6.4vh;
+    box-shadow: 1px 3px 5px rgba(133, 133, 133, 0.97);
+    font-weight: normal;
+}
+#fifth .b-src:hover{
+    border: 1px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    background-color: transparent;
+}
+/* ---------------------------------------------------------------- */
+footer{
+    height: 45vh;
+    background-color: rgba(194, 224, 247, 0.8);padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer h1{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    line-height: 2em;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgba(96, 96, 96, 0.97);
+}
+footer ul li a:hover{
+    color: rgba(56, 108, 229, 0.97);
+}
+footer .one .logo{
+    display: flex;align-items: center;
+    margin-bottom: 0.7em;
+}
+footer .one .logo h1{
+    margin-top: 1em;
+}
+footer .one a{
+    text-decoration: none;
+    color: rgba(96, 96, 96, 0.97);
+}
+footer .one p{
+    margin-top: 1em;
+    color: rgba(96, 96, 96, 0.97) ;
+}
+footer .five {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+footer .five img{
+    width: 40px;
+    height: 40px;
+    margin-right: 2vh;
+}
+
+
+@media screen and (max-width:1000px) {
+    nav{
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul {
+        width: 100%;
+        display: none;
+    }
+    nav .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+    }
+    /* header  */
+    header h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    header p{
+        width: 100%;
+    }
+    header {
+        height: auto;
+        gap: 10px;
+    }
+    header .src{
+        width: 50%;
+    }
+    header .b-src{
+        width: 40%;
+    }
+    /* numbers */
+    #numbers .bloc{
+        overflow-x: auto;
+        gap: 10px;
+        height: 10vh;
+    }
+    #numbers .bloc .box img{
+        object-fit: cover;
+        object-position: center;
+        margin-right: 1vh;
+        width: 50px;
+        height: 50px;
+    }
+    #numbers .bloc .box .text h1{
+        font-size: 1em !important;
+    }
+    #numbers .bloc .box .text p{
+        font-size: 0.6em;
+    }
+    /* first */
+    #first  .head{
+        font-size: 0.7rem;
+    }
+    #first .courses .course-box-top{
+        flex-direction: column;
+    }
+    .courses .course-box-top .course-box{
+        margin: 10px;
+        width: 100%;
+    }
+    .courses .course-box-top .course-box .line{
+        margin-left: 1em;
+    }
+    /* second  */
+    #second {
+        flex-direction: column;
+        height: auto;
+    }
+    #second .left h1{
+        font-size: 1.5rem;
+    }
+    #second .left p{
+        font-size: 1rem;
+    }
+    #second .left{
+        width: 100%;
+    }
+    #second .right{
+        width: 100%;
+    }
+    /* third  */
+    #third {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+    #third .left{
+        width: 100%;
+    }
+    #third .right{
+        width: 100%;
+    }
+    #third .right h1{
+        font-size: 1.8rem;
+    }
+    #third .right p{
+        font-size: 1rem;
+    }
+    /* fourth  */
+    #fourth .bloc-blog{
+        flex-direction: column;
+        width: 100%;
+    }
+    #fourth .head .left h1{
+        font-size: 1.2rem;
+    }
+    #fourth .blog{
+        width: 100%;
+    }
+    #fourth .blog h2{
+        font-size: 1em;
+    }
+    #fourth .blog a{
+        font-size: 0.8rem;
+    }
+    /* fifth */
+    #fifth {
+        height: auto;
+        background-color: #fff;
+    }
+    f#fifth h1{
+        font-size: 1.5rem;
+    }
+    #fifth p{
+        font-size: 1rem;
+    }
+    #fifth .src{
+        width: 65%;
+    }
+    #fifth .b-src{
+        width: 30%;
+        height: 4.7vh;
+    }
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+    footer .one{
+        width: 100%;
+    }
+    footer h1{
+        margin-top: 0.5em;
+    }
+    footer .five {
+        width: 100%;
+    }
+    footer .five ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
